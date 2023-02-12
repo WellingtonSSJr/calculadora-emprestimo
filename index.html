@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora de Emprestimo</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-bg">
+
+            <div class="header-menu">
+                <div class="logo-bg">
+                    <h3>Calculadora de <br> emprestimo</h3>
+                </div>
+                <!-- ----------------------------------------------------- -->
+                <nav class="navegacao">
+                    <ul class="header-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="form">
+                <!-- <form action=""> -->
+                <label for="valor-emprestimo">Valor do emprestimo($)</label>
+                <input type="text" name="valor-emprestimo" id="valor-emprestimo">
+
+                <label for="juros">Juros Anuais(%)</label>
+                <input type="text" name="juros" id="juros">
+
+                <label for="periodoAno">Periodo de pagamento Eletrônico(Ano)</label>
+                <input type="text" name="periodoAno" id="periodoAno">
+
+                <label for="cep">CEP - Para localizar credores</label>
+                <input type="text" name="cep" id="cep">
+
+                <button class="btn-calcular">Calcular</button>
+                <!-- </form> -->
+
+                <div class="resultado">
+
+                    <p>Pagamento Mensal: <span class="pagamento-mes">R$ 00,00</span> </p>
+                    <p>Pagamento Total: <span class="total">R$ 00,00</span></p>
+                    <p>Juros totais: <span class="juros-totas">R$ 00,00</span></p>
+                </div>
+            </div>
+
+            <div class="grafico">
+                <h3>Saldo do Empréstimo, Capital Acumulado e Pagamentos de Juros</h3>
+                <img src="./grafico/grafico.png" alt="" srcset="">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+        <div class="footer-contato">
+
+            <ul>
+                <li>
+                    Criado por: <span>Wellington</span>
+                </li>
+                <li>
+                    Linguagens: <span>HTML, CSS, JS e CANVAS.</span>
+                </li>
+                <li>
+                    Contatos: <span>Wellington@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+        <span class="detalhe"></span>
+        <div class="footer-sobre" id="sobre">
+
+            <p>A Calculadora de Emprestivo, te ajuda a entender melhor sobre o dinheiro que você está pegando com os bancos, seja ele para pagar dívidas, comprar algo ou investimento.</p>
+        </div>
+    </footer>
+</body>
+<script src=" ./js/script.js">
+</script>
+
+</html>
